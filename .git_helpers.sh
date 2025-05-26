@@ -3,7 +3,7 @@
 alias gsw="git switch"
 alias gswc="git switch -c"
 alias back="git checkout -"
-alias uncommit="git reset HEAD~1 && echo \"Uncommitted \$(git rev-parse HEAD)\""
+alias uncommit="echo \"Uncommitting \$(git rev-parse HEAD)...\" && git reset HEAD~1"
 alias amend="git commit --amend"
 alias amendm="git commit --amend -m"
 alias cherry="git cherry-pick"
