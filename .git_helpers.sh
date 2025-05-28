@@ -9,7 +9,7 @@ alias gamm="git commit --amend -m"
 alias cherry="git cherry-pick"
 
 alias ms="git switch master"
-alias msp="git fetch master && git switch master"
+alias msp="git switch master && git pull"
 alias remaster="git rebase master"
 
 reb() {

@@ -10,7 +10,7 @@ function gamm { & git commit --amend -m @args }
 function cherry { & git cherry-pick @args }
 
 function ms { & git switch master }
-function msp { & git fetch master; & git switch master }
+function msp { & git switch master; & git pull }
 function remaster { & git rebase master }
 
 function reb([string]$Branch) {
