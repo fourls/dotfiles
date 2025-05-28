@@ -24,14 +24,14 @@ function Prompt {
   if (-not $LASTEXITCODE) {
     $Revision = & git symbolic-ref --short HEAD
     if ($LASTEXITCODE) {
-      $Revision = "($(& git rev-parse --short HEAD)...)"
+      $Revision = "$(& git rev-parse --short HEAD)..."
       if ($LASTEXITCODE) {
         $Revision = & git branch --show-current
       }
     }
 
     if (-not $LASTEXITCODE) {
-      $Elements += ,@($Revision, "Blue")
+      $Elements += ,@("($Revision)", "Blue")
     }
   }
 
