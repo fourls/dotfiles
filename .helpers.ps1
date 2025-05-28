@@ -6,7 +6,7 @@ $MyModules = @(
 
 if ((Get-InstalledModule $MyModules).Count -ne $MyModules.Count) {
   Write-Host "Installing required modules..."
-  Install-Module $MyModules
+  Install-Module $MyModules -AcceptLicense
   Write-Host "Required modules installed."
 }
 
