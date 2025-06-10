@@ -4,12 +4,6 @@ $MyModules = @(
   'PsFzf'
 )
 
-if ((Get-InstalledModule $MyModules).Count -ne $MyModules.Count) {
-  Write-Host "Installing required modules..."
-  Install-Module $MyModules -AcceptLicense
-  Write-Host "Required modules installed."
-}
-
 Import-Module $MyModules
 
 Set-PsFzfOption -PSReadlineChordProvider 'ctrl+t' -PSReadlineChordReverseHistory 'ctrl+r'
@@ -41,4 +35,8 @@ function Prompt {
 
   # PS> gets written if no output is returned
   return "`n$ "
+}
+
+function Install-MyModules {
+  Install-Module $MyModules -AcceptLicense
 }
