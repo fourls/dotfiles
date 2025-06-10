@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. "$DOTFILES/lib/git-prompt.sh"
+
 my_prompt() {
     local red ylw mgn rst
     red='\033[0;31m'
