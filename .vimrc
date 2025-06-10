@@ -24,3 +24,4 @@ vnoremap <leader>y "+y
 vnoremap <leader>d "+d
 nnoremap <leader>P "+P
 nnoremap <leader>p "+p
+nnoremap <leader>yy "+yy
