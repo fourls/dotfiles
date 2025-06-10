@@ -7,6 +7,7 @@ alias uncommit="echo \"Uncommitting \$(git rev-parse HEAD)...\" && git reset HEA
 alias gam="git commit --amend"
 alias gamm="git commit --amend -m"
 alias cherry="git cherry-pick"
+alias glog='git log --pretty="format:%C(brightyellow)+ %h%C(brightwhite) %s%n%Creset|  %an, %cr%C(cyan)%(decorate)"'
 
 alias ms="git switch master"
 alias msp="git switch master && git pull"

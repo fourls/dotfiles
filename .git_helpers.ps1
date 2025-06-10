@@ -12,6 +12,9 @@ function cherry { & git cherry-pick @args }
 function ms { & git switch master }
 function msp { & git switch master; & git pull }
 function remaster { & git rebase master }
+function glog {
+  & git log --pretty="format:%C(brightyellow)+ %h%C(brightwhite) %s%n%Creset|  %an, %cr%C(cyan)%(decorate)"
+}
 
 function reb([string]$Branch) {
   if (-not $Branch) { $Branch = "master" }
